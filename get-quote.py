@@ -7,10 +7,13 @@ def primary():
   quotes = f.readlines()
   f.close()
 
-  last = 13
-  rnd = random.randint(0, last)
-  
-  print(quotes[rnd])
+  i = int(input("How many quotes do you want?"))
+  count = 0
+  while i > count:
+      last = 15
+      rnd = random.randint(0, last)
+      print(quotes[rnd].rstrip())
+      count += 1
 
 if __name__== "__main__":
   primary()
